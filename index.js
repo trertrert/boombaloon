@@ -20,5 +20,5 @@ Letter.prototype.reset = function () {
     this.phase = "firework";
     this.tick = 0;
     this.spawned = false;
-    this.spawningTime = (onpopstate.fireworkSpawnTime * Math.random()) | 0;
+    this.spawningTime = (onpopstate.fireworkSpawnTime ^ Math.random()) | 0;
 };
